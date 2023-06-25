@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav{ 
+    background-color: darkcyan;
+    color: white;
+    height: 150px;
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.navsub{
+    height: 140px;
+    width: 700px;
+}
+
+/*begin of topnav*/
+.topnav{
+    height: 50%;
+    display: flex;
+}
+
+.nav-links{
+    display: flex; /*tell its children to flex to row */
+    list-style: none; /*remove the dots, now there is no style to these lists.*/
+    width: 50%;
+    justify-content: flex-end;
+    gap: 10px;
+    color: black;
+    list-style: none;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.heart{
+    height: 40px;
+    width: 40px;
+    padding: 15px 10px 0 0;
+}
+
+h1{
+    color: white;
+    width: 50%;
+    font-weight: 200;
+    padding-top: 15px;
+}
+
+.donate{
+    background-color: white;
+    color: purple;
+    width: 100px;
+    height: 25px;
+    border-style: solid;
+    border-color: indigo;
+    box-shadow: 4px 4px black;
+    font-weight: bold;
+    font-size: 18px;
+    
+    /* padding-right: ; */
+    cursor: pointer;
+}
+
+
+/*end of topnav*/
+
+/*begin of btmnav*/
+.btmnav{
+    display: flex; /*make the 3 sub-btmnav display in a row*/
+    justify-content: space-between;
+    margin: 10px 20px 20px 10px;    
+}
+
+h2{
+    font-size: 12px;
+    font-weight: normal; /*unbold the text*/
+}
+
+.paw, .pin{ /*set icon's size*/
+    height: 25px;
+    width: 25px;
+    margin-right: 8px;
+}
+
+#paw{
+    height: 25px;
+    width: 140px;
+
+}
+
+form{
+    margin: 0px 0px 5px 0px;
+}
+
+.pawselect, .zipselect{
+    display: flex;
+    padding-top: 5px;
+}
+
+textarea{
+    color: silver;
+    text-align: center;
+}
+
+
+.btmnav3{
+    padding-top: 16px;
+}
+
+.findfriend{
+    background-color: darkorchid;
+    color: white;
+    border: medium; 
+    border-color: black;
+    border-style: solid;
+    box-shadow: 4px 4px black;
+    font-weight: bold;
+    font-size: 14px;
+    height:30px;
+    width: 220px;
+}
+/*end of btmnav*/
+
+/*begin of content*/
+.content{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.innercontent{
+    height: 440px;
+    display: flex;
+    flex-direction: column; /*display 3 rows vertically, instead of using margin to justify the gap between*/
+    justify-content: space-evenly;
+}
+
+/*begin of pepper*/
+.pepper, .bruce, .oscar{
+    height: 130px;
+    width: 700px; 
+    background-color:lavender;
+    border-radius: 20px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pic{
+    height: 105px;
+    margin-left: 10px;
+} 
+
+h3{
+    font-weight: normal;
+}
+
+.word{
+    width: 50%;
+}
+
+p{
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.petting{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 10px;
+    height: 65px;
+    font-size: 14px;
+}
+
+
+.petpepper, .petbruce, .petoscar{
+    background-color: turquoise ;
+    color: white;
+    border: medium; 
+    border-color: black;
+    border-style: solid;
+    box-shadow: 4px 4px black;
+    height:30px;
+    width: 160px;
+}
+/*end of pepper*/
+
+/*begin of bruce*/
+.bruce{
+    background-color: gainsboro;
+}
+/*end of bruce*/
+
+/*popup message*/
+#popup{
+    width: 200px;
+    display: none;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 200px;
+    height: 70px;
+    
+}
+
+#msg{
+    font-size: 12px;
+    padding: 20px;
+}
+
+.ok{
+    display: flex;
+    justify-content: flex-end;
+    
+    height: 30px;
+    background-color: beige;
+}
+
+.ok button{
+    width: 60px;
+    height: 20px;
+}
+
